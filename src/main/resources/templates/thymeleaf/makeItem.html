@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title> SpringBoot : makeItem </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>아이템 추가하기(Create)</h1>
+<form action="#" method=post" th:action="@{/item}" th:object="${item}">
+    <p>Name : <input type="text" th:field="*{itemName}"/></p>
+    <p>Password : <input type="password" th:field="*{itemNumber}"/></p>
+    <p><input type="submit" value="추가하기"/> <input type="reset" value="새로 입력하기"/></p>
+</form>
+</body>
+</html>
